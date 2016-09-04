@@ -19,7 +19,7 @@ exports.config = {
   cucumberOpts: {
     // require step definitions
     require: [
-      '../**/*.steps.js' // accepts a glob
+      '../**/*.steps.ts' // accepts a glob
     ]
   },
 
