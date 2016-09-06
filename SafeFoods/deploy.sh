@@ -35,7 +35,8 @@ ng build
 echo "deleting old gh-pages"
 git push origin :gh-pages
 echo "pushing dist!"
-git subtree push --prefix dist/ origin gh-pages
+cd ..
+git subtree push --prefix SafeFoods/dist/ origin gh-pages
 
 
 }
