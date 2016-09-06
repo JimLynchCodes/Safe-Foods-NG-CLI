@@ -6,7 +6,7 @@
 module.exports = function(environment) {
   return {
     environment: environment,
-    baseURL: '/',
+    baseURL: '/Safe-Foods',
     locationType: 'auto'
   };
 };
