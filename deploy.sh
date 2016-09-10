@@ -13,7 +13,7 @@ echo "Deploying..."
  
 git push origin :gh-pages
 git commit -am 'commit from paris, france.'
-git subtree push --prefix SafeFoods/dist/ origin gh-pages || {
+git subtree push --prefix FountainSafeFoods/dist/ origin gh-pages || {
 echo "something bad happened"
 echo "deleting gh-pages"
 git branch -D gh-pages
@@ -29,14 +29,14 @@ git push origin gh-pages
 echo "checking out master"
 git checkout master
 echo "entering SafeFoods"
-cd SafeFoods 
+cd FountainSafeFoods 
 echo "building dist folder"
-ng build
+gulp build
 echo "deleting old gh-pages"
 git push origin :gh-pages
 echo "pushing dist!"
 cd ..
-git subtree push --prefix SafeFoods/dist/ origin gh-pages
+git subtree push --prefix FountainSafeFoods/dist/ origin gh-pages
 
 
 }
