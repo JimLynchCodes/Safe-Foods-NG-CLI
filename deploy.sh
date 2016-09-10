@@ -19,6 +19,7 @@ echo "deleting gh-pages"
 git branch -D gh-pages
 echo "checking out orphan"
 git checkout --orphan gh-pages
+cd ..
 echo "adding"
 git add --all
 echo "committing"
