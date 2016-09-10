@@ -9,22 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var to_dos_component_1 = require('./to-dos/to-dos.component');
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = 'app works!';
+var ToDosComponent = (function () {
+    function ToDosComponent() {
     }
-    AppComponent = __decorate([
+    ToDosComponent.prototype.ngOnInit = function () {
+    };
+    ToDosComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'app-root',
-            templateUrl: 'app.component.html',
-            styleUrls: ['app.component.css'],
-            directives: [to_dos_component_1.ToDosComponent]
+            selector: 'app-to-dos',
+            templateUrl: 'to-dos.component.html',
+            styleUrls: ['to-dos.component.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], ToDosComponent);
+    return ToDosComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.ToDosComponent = ToDosComponent;
+//# sourceMappingURL=to-dos.component.js.map
