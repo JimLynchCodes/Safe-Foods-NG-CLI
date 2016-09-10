@@ -29,7 +29,8 @@ git push origin gh-pages
 echo "checking out master"
 git checkout master
 echo "entering SafeFoods"
-cd FountainSafeFoods 
+ls
+cd SafeFoods/FountainSafeFoods 
 echo "building dist folder"
 gulp build
 echo "deleting old gh-pages"
